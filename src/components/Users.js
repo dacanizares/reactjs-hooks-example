@@ -18,7 +18,9 @@ function Users() {
   return (
     <div>
       <div className='row'>
-        {users.map((user, index) => <User user={user} key={index} />) }      
+        {users.map((user, index) => 
+          <User user={user} key={index} />
+        )}      
       </div>
       
       <div className='row mt-3'>
