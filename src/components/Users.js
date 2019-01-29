@@ -1,26 +1,15 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import User from './User';
-import UsersApi from '../api/UsersApi';
+import Card from './Card';
 
-function Users() {
-  const [users, setUsers] = useState([]);
-  const usersApi = new UsersApi();
-
-  function fetchUsers() {
-    usersApi.find().then(response => setUsers(response));
-  }
-
-  useEffect(() => {
-    fetchUsers();
-  }, []);
-
+const Users = ({usersList, fetchUsers}) =>  {   
   return (
     <div>
       <div className='row'>
-        {users.map((user, index) => 
-          <User user={user} key={index} />
-        )}      
+        <div className='card-deck'>
+          {usersList.map((user, index) => 
+              <Card text={user.email} title={`${user.name.title} ${user.name.last}`} imageUrl={user.picture.large} index={index} />    
+          )}      
+        </div>
       </div>
       
       <div className='row mt-3'>
