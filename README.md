@@ -1,3 +1,9 @@
+# ReactJS Hooks Example
+
+This is a project to explore the use of hooks on ReactJS. Nothing more, nothing less.
+
+## More info
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
