@@ -1,11 +1,13 @@
 import React from 'react';
-import User from './User';
+import Users from './Users';
 import renderer from 'react-test-renderer';
 
 jest.mock('./Card', () => 'Card');
 
 it('renders correctly', () => {
-  const user = {
+  const fecth = () => { }
+
+  const userList = [{
     email: 'email@test.com', 
     name: {
       title: 'mr',
@@ -14,10 +16,10 @@ it('renders correctly', () => {
     picture: {
       large: 'image here'
     }
-  }
+  }];
 
   const tree = renderer
-    .create(<User user={user} />)
+    .create(<Users usersList={userList} fetchUsers={fecth} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

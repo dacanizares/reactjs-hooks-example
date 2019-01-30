@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="row"
+  >
+    <div
+      className="card-deck"
+    >
+      <Card
+        imageUrl="image here"
+        index={0}
+        text="email@test.com"
+        title="mr undefined"
+      />
+    </div>
+  </div>
+  <div
+    className="row mt-3"
+  >
+    <div
+      className="col-xs-12"
+    >
+      <a
+        className="btn btn-primary btn-lg"
+        href="#"
+        onClick={[Function]}
+      >
+        Update
+      </a>
+    </div>
+  </div>
+</div>
+`;
