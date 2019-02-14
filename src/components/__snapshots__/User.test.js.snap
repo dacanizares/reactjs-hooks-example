@@ -5,6 +5,7 @@ exports[`renders correctly 1`] = `
   className="card"
 >
   <img
+    alt="Title"
     className="card-img-top"
     src="ImageUrl"
   />
@@ -17,7 +18,7 @@ exports[`renders correctly 1`] = `
     <p
       className="card-text"
     >
-      Text
+      my@email.com
     </p>
   </div>
 </div>

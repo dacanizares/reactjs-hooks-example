@@ -1,8 +1,8 @@
-import React from 'react';
-import Users from './Users';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import Users from './Users'
+import renderer from 'react-test-renderer'
 
-jest.mock('./Card', () => 'Card');
+jest.mock('./User', () => 'User');
 
 it('renders correctly', () => {
   const fecth = () => { }
@@ -15,6 +15,9 @@ it('renders correctly', () => {
     },
     picture: {
       large: 'image here'
+    },
+    id: {
+      name: 'uniquename'
     }
   }];
 

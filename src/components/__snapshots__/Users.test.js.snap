@@ -1,35 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+Array [
   <div
     className="row"
   >
     <div
       className="card-deck"
     >
-      <Card
-        imageUrl="image here"
-        index={0}
-        text="email@test.com"
-        title="mr undefined"
+      <User
+        avatarUrl="image here"
+        email="email@test.com"
+        index="uniquename"
+        name="mr undefined"
       />
     </div>
-  </div>
+  </div>,
   <div
-    className="row mt-3"
+    className="mt-3 row"
   >
     <div
-      className="col-xs-12"
+      className="col-12"
     >
-      <a
+      <button
         className="btn btn-primary btn-lg"
-        href="#"
         onClick={[Function]}
       >
         Update
-      </a>
+      </button>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

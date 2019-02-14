@@ -1,27 +1,32 @@
-import React from 'react';
-import Card from './Card';
+import React from 'react'
+import User from './User'
+import { Row, Col, CardDeck } from 'reactstrap'
 
 const Users = ({usersList, fetchUsers}) =>  {   
   return (
-    <div>
-      <div className='row'>
-        <div className='card-deck'>
-          {usersList.map((user, index) => 
-              <Card text={user.email} title={`${user.name.title} ${user.name.last}`} imageUrl={user.picture.large} index={index} />    
-          )}      
-        </div>
-      </div>
+    <>
+      <Row>
+        <CardDeck>
+          {usersList.map((user) => 
+            <User 
+              email={user.email} 
+              name={`${user.name.title} ${user.name.last}`} 
+              avatarUrl={user.picture.large} 
+              index={user.id.name} />    
+          )}
+        </CardDeck>
+      </Row>
       
-      <div className='row mt-3'>
-        <div className='col-xs-12'>
-          <a href='#'
+      <Row className='mt-3'>
+        <Col xs='12'>
+          <button 
             className='btn btn-primary btn-lg' 
             onClick={() => fetchUsers()} >
             Update
-          </a>
-        </div>
-      </div>
-    </div>
+          </button>
+        </Col>
+      </Row>
+    </>
   );
 }
 

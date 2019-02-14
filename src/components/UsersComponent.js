@@ -1,7 +1,7 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import UsersApi from '../api/UsersApi';
-import Users from './Users';
+import React from 'react'
+import { useState, useEffect } from 'react'
+import UsersApi from '../api/UsersApi'
+import Users from './Users'
 
 function UsersComponent() {
   const [users, setUsers] = useState([]);
@@ -17,9 +17,9 @@ function UsersComponent() {
   }, []);
 
   return (
-    <div>
+    <>
      <Users usersList={users} fetchUsers={fetchUsers} />
-    </div>
+    </>
   );
 }
 
