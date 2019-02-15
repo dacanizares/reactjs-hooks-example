@@ -17,7 +17,7 @@ it('renders correctly', () => {
       large: 'image here'
     },
     id: {
-      name: 'uniquename'
+      value: 'uniquevalue'
     }
   }];
 

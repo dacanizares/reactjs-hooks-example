@@ -11,7 +11,6 @@ Array [
       <User
         avatarUrl="image here"
         email="email@test.com"
-        index="uniquename"
         name="mr undefined"
       />
     </div>

@@ -12,7 +12,7 @@ const Users = ({usersList, fetchUsers}) =>  {
               email={user.email} 
               name={`${user.name.title} ${user.name.last}`} 
               avatarUrl={user.picture.large} 
-              index={user.id.name} />    
+              key={user.id.value} />    
           )}
         </CardDeck>
       </Row>
