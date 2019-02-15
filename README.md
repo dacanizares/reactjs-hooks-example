@@ -1,5 +1,7 @@
 # ReactJS Hooks Example
 
+[![Build Status](https://travis-ci.org/dacanizares/reactjs-hooks-example.svg?branch=master)](https://travis-ci.org/dacanizares/reactjs-hooks-example)
+
 This is a project to explore the use of hooks on ReactJS. Nothing more, nothing less.
 
 ## More info
