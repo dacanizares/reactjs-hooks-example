@@ -4,6 +4,8 @@
 
 This is a project to explore the use of hooks on ReactJS. Nothing more, nothing less.
 
+**Dockerized!** this project has docker images that you can use as an example of how to *Dockerize* you ReactJS app. [More info](https://mherman.org/blog/dockerizing-a-react-app/)
+
 ## More info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
